@@ -10,7 +10,7 @@ public:
             }else{
                 carry=1;
                 while(i>=0){
-                    if(digits[i]==9 && carry==1){
+                    if(digits[i]==9){
                         num.push_back(0);
                     }else{
                         num.push_back(digits[i]+carry);
