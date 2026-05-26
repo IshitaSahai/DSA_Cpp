@@ -7,11 +7,6 @@ public:
         while(n>0){
             rem=n%7;
             n/=7;
-            // cnt++;
-            // sn=(sn*10)+rem;
-            // if(cnt==1 && rem==0){
-            //     temps="0";
-            // }
             temps+=to_string(rem);
         }
         if(num==0){
