@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isHappy(int n) {
         long long d=0,sqnum=0;
-        unordered_map<int,int> mpp;
+        map<int,int> mpp;
         while(n>=0){
             d=n%10;
             n/=10;
