@@ -8,9 +8,9 @@ public:
             mpp[s[r]]++;
             maxfreq=max(maxfreq,mpp[s[r]]);
             changes=(r-l+1)-maxfreq;
-            if(changes>k){//no need for while loop as no need to trim it dowm to too small length as the next answer would be the one that would be >=maxi ie. the maxlen so no need to trim it down till <maxi
+            if(changes>k){
                 mpp[s[l]]--;
-                maxfreq=0;//no need to update maxfreq to a smaller value than the already present max value
+                maxfreq=0;
                 l++;
             }
             if(changes<=k){
