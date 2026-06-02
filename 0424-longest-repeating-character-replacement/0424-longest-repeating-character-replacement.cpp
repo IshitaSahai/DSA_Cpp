@@ -1,7 +1,7 @@
 class Solution {
 public:
     int characterReplacement(string s, int k) {
-        int n=s.length(), cnt=0;
+        int n=s.length();
         unordered_map<char,int> mpp;
         int maxi=INT_MIN, l=0,r=0,maxfreq=0,changes=0;
         while(r<n){
@@ -13,7 +13,7 @@ public:
                 maxfreq=0;
                 l++;
             }
-            if(cnt<=k){
+            if(changes<=k){
                 maxi=max(maxi,r-l+1);
             }
             r++;
